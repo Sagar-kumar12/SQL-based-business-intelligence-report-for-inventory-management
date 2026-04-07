@@ -1,4 +1,4 @@
-# SQL-based-business-intelligence-report-for-inventory-management
+# SQL Based Pizza Anlysis Dashboard For Inventory Management
 
 **Project Overview**
 This project focuses on optimizing inventory management using SQL and business intelligence techniques. It involves querying raw inventory data to generate insightful reports that help track stock levels, reorder status, supplier efficiency, and inventory turnover. These insights support inventory optimization and operational decision-making.
