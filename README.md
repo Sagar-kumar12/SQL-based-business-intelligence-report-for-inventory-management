@@ -1,62 +1,71 @@
 # SQL Based Pizza Anlysis Dashboard For Inventory Management
 
-**Project Overview**
-This project focuses on optimizing inventory management using SQL and business intelligence techniques. It involves querying raw inventory data to generate insightful reports that help track stock levels, reorder status, supplier efficiency, and inventory turnover. These insights support inventory optimization and operational decision-making.
+Pizza Sales Data Analysis
 
-**Objectives**
+📌 Project Overview
 
-Monitor real-time inventory levels across multiple warehouses or stores.
-Identify fast-moving and slow-moving products.
-Track out-of-stock and overstock situations.
-Analyze supplier performance and restocking trends.
-Improve inventory turnover rates and reduce holding costs.
+This project focuses on analyzing pizza sales data to uncover business insights such as revenue trends, customer preferences, and product performance. The goal is to help stakeholders make data-driven decisions to improve sales and operational efficiency.
 
-**Tools & Technologies**
+📊 Dataset Description
 
-SQL (MySQL / PostgreSQL / SQL Server)
-Power BI / Excel for data visualization
-Jupyter Notebook (optional) for documenting SQL logic
-Database Tables: Products, Inventory, Sales, Suppliers, Restocks
+The dataset contains detailed transactional records of pizza sales, including:
 
-**Key Features**
+Order Details: order_id, order_date, order_time
+Product Information: pizza_name, pizza_category, pizza_size, pizza_ingredients
+Sales Metrics: quantity, unit_price, total_price
 
-Custom SQL Views for low stock alerts and reorder recommendations
-Inventory Aging Report: Products sitting in stock beyond defined thresholds
-Stock Movement Analysis: Daily/weekly inflow vs outflow of stock
-Supplier Reliability Report: On-time delivery rates and restock delays
-Interactive Dashboard (if integrated with Power BI) with slicers by category, location, and time
+Total records: 48,620 rows
 
-**Dataset**
+🎯 Objectives
+Analyze overall revenue and sales performance
+Identify top-selling pizzas
+Understand category-wise contribution
+Examine size-wise demand
+Discover ordering patterns
 
-Source: Synthetic dataset or from open-source inventory datasets
-Sample Tables:
-products (product_id, product_name, category, reorder_level)
-inventory (product_id, warehouse_id, stock_qty, last_updated)
-sales (sale_id, product_id, quantity_sold, sale_date)
-restocks (restock_id, product_id, quantity_added, supplier_id, restock_date)
-suppliers (supplier_id, supplier_name, rating)
+🔍 Key Insights
 
-**Insights Gained**
+💰 Overall Performance
+Total Revenue: $817,860+
+Total Orders: 21,350
+Total Pizzas Sold: 49,574
 
-Identified products at risk of stockouts across key locations.
-Flagged slow-moving inventory tying up warehouse space.
-Improved supplier selection based on delivery timelines and restock frequency.
-Enabled proactive reordering to avoid lost sales opportunities.
+🍕 Top-Selling Pizzas
+The Classic Deluxe Pizza
+The Barbecue Chicken Pizza
+The Hawaiian Pizza
+The Pepperoni Pizza
+The Thai Chicken Pizza
 
-**How to Run This Project**
+📂 Category-wise Revenue
+Classic pizzas generate the highest revenue
+Followed by Supreme, Chicken, and Veggie
 
-Clone this repository.
-Import the SQL schema and populate it with the sample data.
-Run SQL queries in your preferred database client (e.g., MySQL Workbench, pgAdmin).
-(Optional) Connect the database to Power BI or Excel to create live dashboards.
+📏 Size-wise Demand
+Large (L) size is the most popular
+Followed by Medium (M) and Small (S)
+XL and XXL contribute very little to overall sales
 
-**Future Enhancements**
+📈 Analysis Performed
+Data Cleaning and Preprocessing
+Aggregations using SQL/Pandas
+Revenue and Sales Analysis
+Grouping and Sorting for insights
+Trend identification
 
-Add triggers or procedures for automatic low-stock alerts.
-Schedule daily reports using SQL Jobs or Power BI Service.
-Integrate barcode or RFID-based inventory tracking.
+🛠️ Tools & Technologies Used
+Python (Pandas, NumPy)
+SQL (for querying insights)
+Power BI / Excel (for visualization, if applicable)
 
+📌 Conclusion
 
+This analysis highlights customer preferences and sales trends, helping businesses:
+
+Optimize menu offerings
+Focus on high-performing products
+Improve inventory planning
+Increase overall revenue
 
 
 
